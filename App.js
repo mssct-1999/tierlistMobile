@@ -1,21 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { StyleSheet ,Button, View, Text, Image } from 'react-native';
+import HomePage from './Components/HomePage'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.mainWrapper}>
+      <View style={styles.headerWrapper}>
+        <Text>Header!</Text>
+        <Image
+          style={styles.logo}
+          source={require('./assets/tierlist-min-logo.png')}/>
+      </View>
+      <View style={styles.contentWrapper}>
+        <HomePage/>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  mainWrapper: {
+    flex:1,
+    backgroundColor: "yellow"
+  },  
+  headerWrapper: {
+    flex:1,
+    justifyContent:'center',
+    backgroundColor: "red",
+    justifyContent:'center',
+    alignItems:'center'
   },
+  logo: {
+    
+  },  
+  contentWrapper: {
+    flex: 6,
+    backgroundColor: "green"
+  }
 });
