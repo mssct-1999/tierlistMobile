@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet ,Button, View, Text } from 'react-native';
 import UnderlineTitle from './UnderlineTitle'
 import AvatarItem from './AvatarItem'
+import AlbumItem from './AlbumItem'
 
 class HomePage extends React.Component {
     render() {
@@ -14,7 +15,7 @@ class HomePage extends React.Component {
                     <Text style={styles.textDescription}>Pour ce faire 4 intervenants, décortiquent chaque semaine 5 albums différents et en profitent pour livrer leurs ressentis à tour de rôle pour établir une liste pas du tout impartial, mais c'est ça qu'on aime.</Text>
                     <Text style={styles.textDescription}>A noter que le concept est inspiré de celui du podcast <Text style={{fontWeight:"bold"}}>Super Ciné Battle</Text> de <Text style={{fontWeight:"bold"}}>Daniel Andreyev</Text> et <Text style={{fontWeight:"bold"}}>Papa / GKPluginBaby</Text> qui gravent dans le marbre la liste ultime du Cinéma.</Text>
                 </View>
-                <UnderlineTitle text="S/O EKIP"/>
+                <UnderlineTitle text="S/O L'EKIP"/>
                 <View style={styles.divDescription}>
                     <View style={styles.rowAvatar}>
                         <AvatarItem fileName="mehdi" nom="Mehdi Maïzi"/>
@@ -25,6 +26,14 @@ class HomePage extends React.Component {
                         <AvatarItem fileName="sandra" nom="Sandra Gomes"/>   
                     </View>
                 </View>
+                <UnderlineTitle text="classement"/>
+                <AlbumItem artist="Rohff" album="La fierte des notres"/>
+                <AlbumItem artist="Nekfeu" album="Feu"/>
+                <AlbumItem/>
+                <AlbumItem/>
+                <AlbumItem/>
+                <AlbumItem/>
+                <AlbumItem/>
             </View>
         )
     }
