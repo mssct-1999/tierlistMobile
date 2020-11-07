@@ -1,8 +1,9 @@
 import React from 'react'
-import { StyleSheet ,Button, View, Text } from 'react-native';
+import { StyleSheet ,Button, View, Text, FlatList } from 'react-native';
 import UnderlineTitle from './UnderlineTitle'
 import AvatarItem from './AvatarItem'
 import AlbumItem from './AlbumItem'
+import classement from '../Helpers/classement'
 
 class HomePage extends React.Component {
     render() {
@@ -27,13 +28,11 @@ class HomePage extends React.Component {
                     </View>
                 </View>
                 <UnderlineTitle text="classement"/>
-                <AlbumItem artist="Rohff" album="La fierte des notres"/>
-                <AlbumItem artist="Nekfeu" album="Feu"/>
-                <AlbumItem/>
-                <AlbumItem/>
-                <AlbumItem/>
-                <AlbumItem/>
-                <AlbumItem/>
+                <FlatList
+                    data={classement}
+                    keyExtractor={(item) => item.classement.toString()}
+                    renderItem={({item}) => <AlbumItem artist={item.artist} album={item.album} classement={item.classement}/>}
+                />
             </View>
         )
     }

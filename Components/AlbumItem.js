@@ -8,6 +8,7 @@ class AlbumItem extends React.Component {
         super(props)
         this.artist = this.props.artist
         this.album = this.props.album
+        this.classement = this.props.classement
         this.state = {
             album:{},
             cover:""
@@ -24,29 +25,41 @@ class AlbumItem extends React.Component {
 
     render() {
         return (
-            <View style={styles.wrapperAlbumItem}>
-                <Image
-                 style={styles.albumImage}
-                 source={{uri:this.state.cover}}
-                />
-                <View style={styles.wrapperDescription}>
-                    <View>
-                        <Text style={styles.albumNameText}>{this.state.album.name}</Text>
-                    </View>
-                    <View>
-                        <Text style={styles.albumDescriptionText}>{this.state.album.artist}</Text>
-                    </View>
-                </View> 
+            <View>
+                <View style={styles.wrapperClassement}>
+                    <Text style={styles.classemment}>#{this.classement}</Text>
+                </View>
+                <View style={styles.wrapperAlbumItem}>
+                    <Image
+                    style={styles.albumImage}
+                    source={{uri:this.state.cover}}
+                    />
+                    <View style={styles.wrapperDescription}>
+                        <View>
+                            <Text style={styles.albumNameText}>{this.state.album.name}</Text>
+                        </View>
+                        <View>
+                            <Text style={styles.albumDescriptionText}>{this.state.album.artist}</Text>
+                        </View>
+                    </View> 
+                </View>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    wrapperClassement: {
+        marginTop:10
+    },
+    classemment: {
+        color:"#FCFCA3",
+        fontWeight:"bold"
+    },
     wrapperAlbumItem: {
-       marginTop:10,
+       marginTop:0,
        backgroundColor: "#212038",
-       padding:10,
+       padding:5,
        borderRadius:50,
        flexDirection:"row"
     },

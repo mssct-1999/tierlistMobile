@@ -1,58 +1,127 @@
-const classement = {
-    1: {
-        album:"La fierté des notres",
-        artist:"Rohff",
-        released: "2004",
-        description: "30 titres, 2h23mn"
+const classement = [
+    {
+        classement:1,
+        album:"La fierte des notres",
+        artist:"Rohff"
     },
-    2: {
+    {
+        classement:2,
         album:"UMLA",
-        artist:"Alpha Wann",
-        released: "2018",
-        description: "17 titres, 58mn"
+        artist:"Alpha Wann"
     },
-    3: {
+    {
+        classement:3,
         album:"A7",
-        artist:"SCH",
-        released: "2015",
-        description: "14 titres, 49mn"
+        artist:"SCH"
     },
-    4: {
-        album:"Suprême NTM",
-        artist:"Suprême NTM",
-        released: "1998",
-        description: "16 titres, 54mn"
+   {
+        classement:4,
+        album:"Supreme NTM",
+        artist:"Supreme NTM"
     },
-    5: {
+    {
+        classement:5,
         album:"Cyborg",
-        artist:"Nekfey",
-        released: "2016",
-        description: "14 titres, 1h"
+        artist:"Nekfeu"
     },
-    6: {
-        album:"Bâtards sensibles",
-        artist:"TTC",
-        released: "2004",
-        description: "12 titres, 47mn"
+    {
+        classement:6,
+        album:"Batards sensibles",
+        artist:"TTC"
     },
-    7: {
-        album:"Vulgaire, Violent et Ravi D'être Là",
-        artist:"Sadek",
-        released: "2017",
-        description: "18 titres, 1h 5mn"
+    {
+        classement:7,
+        album:"Vulgaire, Violent et Ravi D'etre La",
+        artist:"Sadek"
     },
-    8: {
+    {
+        classement:8,
         album:"Imany",
-        artist:"Dinos",
-        released: "2018",
-        description: ""
+        artist:"Dinos"
     },
-    9: {
-        album:"La fierté des notres",
-        artist:"Rohff",
-        released: "2004",
-        description: "30 titres, 2h23"
+    {
+        classement:9,
+        album:"Si si la famille",
+        artist:"Nysay"
+    }  
+    ,
+    {
+        classement:10,
+        album:"Nique le casino",
+        artist:"Sadek"
     }
+    ,
+    {
+        classement:11,
+        album:"Street minimum",
+        artist:"Nakk"
+    }
+    ,
+    {
+        classement:12,
+        album:"Aller-Retour",
+        artist:"La Fouine"
+    }
+    ,
+    {
+        classement:13,
+        album:"Orelsan et Gringe sont les Casseurs Flowters",
+        artist:"Casseurs Flowters"
+    }
+    ,
+    {
+        classement:14,
+        album:"L'ecole des points vitaux",
+        artist:"Sexion d'assaut"
+    }
+    ,
+    {
+        classement:15,
+        album:"Racines",
+        artist:"Bisso Na Bisso"
+    }
+    ,
+    {
+        classement:16,
+        album:"A chaque frere",
+        artist:"Youssoupha"
+    }
+    ,
+    {
+        classement:17,
+        album:"Grand Cru",
+        artist:"Deen Burbigo"
+    }
+    ,
+    {
+        classement:18,
+        album:"Dans la lumiere",
+        artist:"Zoxea"
+    }
+    ,
+    {
+        classement:19,
+        album:"Que d'la haine",
+        artist:"Anfalsh"
+    }
+    ,
+    {
+        classement:20,
+        album:"Le Calibre qu'il te faut",
+        artist:"Stomy Bugsy"
+    }
+    ,
+    {
+        classement:21,
+        album:"Ghostape",
+        artist:"Lapso Laps"
+    }
+    ,
+    {
+        classement:22,
+        album:"La cour des grands",
+        artist:"Bigflo et oli"
+    }
+]
 
-
-}
+export default classement
